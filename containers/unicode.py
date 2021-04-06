@@ -28,7 +28,6 @@ class NormalizedStr:
         self.text = unicodedata.normalize(normal_form, text)
         self.normal_form = normal_form
 
-
     def __repr__(self):
         '''
         The string returned by the __repr__ function
@@ -39,7 +38,6 @@ class NormalizedStr:
         return "NormalizedStr('" + str(self.text) + "', '" + \
             str(self.normal_form) + "')"
 
-
     def __str__(self):
         '''
         This functions converts the NormalizedStr
@@ -48,7 +46,6 @@ class NormalizedStr:
         same, as the __repr__ function.
         '''
         return str(self.text)
-    
 
     def __len__(self):
         '''
@@ -56,7 +53,6 @@ class NormalizedStr:
         The expression `len(a)` desugars to a.__len__().
         '''
         return len(self.text)
-
 
     def __contains__(self, substr):
         '''
@@ -73,14 +69,12 @@ class NormalizedStr:
         normal = unicodedata.normalize(self.normal_form, substr)
         return normal in self.text
 
-
     def __getitem__(self, index):
         '''
         Returns the character at position `index`.
         The expression `a[b]` desugars to `a.__getitem__(b)`.
         '''
         return self.text[index]
-
 
     def lower(self):
         '''
@@ -90,7 +84,6 @@ class NormalizedStr:
         lower = str(self.text).lower()
         return lower
 
-
     def upper(self):
         '''
         Returns a copy in the same normalized form,
@@ -98,7 +91,6 @@ class NormalizedStr:
         '''
         upper = str(self.text.upper())
         return upper
-
 
     def __add__(self, b):
         '''
@@ -116,7 +108,6 @@ class NormalizedStr:
         sugar = unicodedata.normalize(self.normal_form, self.text + str(b))
         return NormalizedStr(sugar)
 
-
     def __iter__(self):
         '''
         HINT:
@@ -133,7 +124,6 @@ class NormalizedStrItr:
     def __init__(self, text):
         self.text = text
         self.i = 0
-
 
     def __next__(self):
         if len(self.text) <= self.i:
