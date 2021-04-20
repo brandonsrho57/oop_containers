@@ -7,3 +7,4 @@ This is my build status!
 1. [![](https://github.com/brandonsrho57/oop_containers/workflows/tests-unicode/badge.svg)](https://github.com/brandonsrho57/oop_containers/actions?query=workflow%3Atests-unicode)
 1. [![](https://github.com/brandonsrho57/oop_containers/workflows/tests-BST/badge.svg)](https://github.com/brandonsrho57/oop_containers/actions?query=workflow%3Atests-BST)
 1. [![](https://github.com/brandonsrho57/oop_containers/workflows/tests-BinaryTree/badge.svg)](https://github.com/brandonsrho57/oop_containers/actions?query=workflow%3Atests-BinaryTree)
+1. [![](https://github.com/brandonsrho57/oop_containers/workflows/tests-AVLTree/badge.svg)](https://github.com/brandonsrho57/oop_containers/actions?query=workflow%3Atests-AVLTree)
