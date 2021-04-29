@@ -203,8 +203,8 @@ class Heap(BinaryTree):
         if not self.root:
             pass
         else:
-            node1 = self.__len__()
-            rmpath = '{0:b}'.format(node1)[1:]
+            num_node = self.__len__()
+            rmpath = '{0:b}'.format(num_node)[1:]
             last_value, self.root = Heap._remove_bottom_right(self.root, rmpath)
             if self.root:
                 self.root.value = last_value
