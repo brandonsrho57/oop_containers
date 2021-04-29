@@ -122,8 +122,8 @@ class Heap(BinaryTree):
         '''
         if self.root:
             num_node = self.__len__()
-            ins_path = "{0:b}".format(num_node + 1)[1:]
-            self.root = Heap._insert(self.root, value, ins_path)
+            path = "{0:b}".format(num_node + 1)[1:]
+            self.root = Heap._insert(self.root, value, path)
         else:
             self.root = Node(value)
 
